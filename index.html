@@ -142,7 +142,11 @@
         </button>
       </div>
       <div id="label-container">
-        <p id="prediction-label">संभाव्यता: <span id="highest-label"></span></p>
+        <center>
+          <p id="prediction-label">
+            संभाव्यता: <span id="highest-label"></span>
+          </p>
+        </center>
       </div>
       <div id="webcam-container"></div>
     </div>
@@ -155,7 +159,7 @@
       // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
       // the link to your model provided by Teachable Machine export panel
-      const URL = "./model/";
+      const URL = "https://teachablemachine.withgoogle.com/models/iWMKjC9ym/";
 
       let model, webcam, labelContainer, maxPredictions;
 
