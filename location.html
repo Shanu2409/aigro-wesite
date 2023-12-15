@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teachable Machine Image Model</title>
     <style>
-        h1 {
-            margin-top: 40px;
-        }
+      h1 {
+        margin-top: 20px; /* Adjusted margin for the title */
+      }
+
       body {
         display: flex;
         justify-content: center;
@@ -17,29 +18,6 @@
         font-family: "Arial", sans-serif;
         flex-direction: column;
         background-color: #eaf7d7; /* Light green background */
-      }
-
-      #label-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-      }
-
-      #prediction-label {
-        font-size: 1.5em;
-        font-weight: bold;
-        color: #4caf50; /* Dark green text */
-        margin-bottom: 10px;
-      }
-
-      button {
-        /* remove default styling */
-        background: none;
-        border: none;
-        /* color: #333; */
-        cursor: pointer;
-        outline: none;
       }
 
       .navbar {
@@ -68,12 +46,6 @@
         color: #ffee58; /* Yellow color on hover */
       }
 
-      #highest-label {
-        font-size: 24px;
-        font-weight: bold;
-        margin-top: 10px;
-      }
-
       #main-container {
         display: flex;
         flex-direction: column;
@@ -84,6 +56,7 @@
         background-color: #4caf50; /* Dark green top half */
         color: white;
         padding: 20px;
+        margin-top: 20px;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -91,22 +64,99 @@
 
       #top-half img {
         filter: invert(1); /* Invert the color of the Teachable Machine logo */
-        margin-bottom: 0px;
+        margin-bottom: 10px; /* Adjusted margin for better spacing */
+      }
+
+      #location-card {
+        display: flex;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 0%;
+        /* height: 200px; */
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add a smooth transition effect */
+        background-color: #f9f9f9; /* Light background color */
+      }
+
+      #location-card:hover {
+        transform: scale(1.02); /* Scale up the card on hover */
+        box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+      }
+
+      #location-card img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid #ddd; /* Add a border around the image */
+      }
+
+      #location-card div {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+      }
+
+      #location-card h2 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        color: #333; /* Dark text color */
+        font-weight: bold; /* Make the title bold */
+      }
+
+      #location-card p {
+        font-size: 10px;
+        color: #666; /* Slightly darker text color */
+        line-height: 1.5; /* Increase the line height for better readability */
       }
     </style>
   </head>
   <body>
     <div class="navbar">
-        <a href="./index.html">Home</a>
-        <a href="./location.html">Location</a>
-        <a href="./contact.html">Contact Us</a>
-      </div>
+      <a href="./index.html">Home</a>
+      <a href="./location.html">Location</a>
+      <a href="./contact.html">Contact Us</a>
+    </div>
 
     <div id="main-container">
       <div id="top-half">
-        <h1>Near by Location</h1>
-    </div>
+        <h1>Nearby Location</h1>
+      </div>
 
-    
+      <div id="location-card">
+        <img src="img/1.jpg" alt="image 1" />
+        <div>
+          <h2>Near, Sint Maarten</h2>
+          <p>road no. 4, house no. 5, near the beach, sint maarten</p>
+        </div>
+      </div>
+
+      <div id="location-card">
+        <img src="img/1.jpg" alt="image 1" />
+        <div>
+          <h2>Jersey</h2>
+          <p>shop no.456, Mock Avenue, near the school, Townsville</p>
+        </div>
+      </div>
+
+      <div id="location-card">
+        <img src="img/1.jpg" alt="image 1" />
+        <div>
+          <h2>Near, rashtra nagar</h2>
+          <p>road no. 124, near the navi college, rashtra nagar</p>
+        </div>
+      </div>
+
+      <div id="location-card">
+        <img src="img/1.jpg" alt="image 1" />
+        <div>
+          <h2>Near, Mulund</h2>
+          <p>shop no. 15, sc. 45c, near the El-hak masjid, mulund E</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
