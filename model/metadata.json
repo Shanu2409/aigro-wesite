@@ -1,14 +1,1 @@
-{
-    "tfjsVersion": "1.3.1",
-    "tmVersion": "2.4.7",
-    "packageVersion": "0.8.4-alpha2",
-    "packageName": "@teachablemachine/image",
-    "timeStamp": "2023-12-15T08:30:46.574Z",
-    "userMetadata": {},
-    "modelName": "tm-my-image-model",
-    "labels": [
-        "मिरची निरोगी",
-        "मिरची दोष"
-    ],
-    "imageSize": 224
-}
+{"tfjsVersion":"1.3.1","tmVersion":"2.4.7","packageVersion":"0.8.4-alpha2","packageName":"@teachablemachine/image","timeStamp":"2023-12-16T11:01:13.839Z","userMetadata":{},"modelName":"tm-my-image-model","labels":["निरोगी मिरची","लीफ कर्ल संक्रमित मिरची","लीफ स्पॉट संक्रमित मिरची","पांढरी माशी संक्रमित मिरची","पिवळसर पानांचा प्रादुर्भाव मिरची "],"imageSize":224}
